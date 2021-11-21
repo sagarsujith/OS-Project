@@ -10,6 +10,7 @@ The project is aimed at developing a multithreaded proxy server and client for t
 major aim of this project is to prevent the client’s data from being used to browse the internet, 
 instead a proxy the client is used to retrieve data from the server. This way provides more 
 secure interaction between the client and the server.
+
 In this project, the client is channeled through the proxy server running on localhost to 
 the main server and the data retrieval takes place through it and the request is saved in the 
 client’s workstation for later usage. It is multithreaded as a client can perform multiple searches 
@@ -27,10 +28,12 @@ simultaneously using multi-threading.. After making a request, on browser or fro
 files are temporarily stored in the cache directory in the proxy server. The next request for the 
 same file will be faster because of this. Can be verified by timing the curl requests on the 
 terminal.
+
 Benefits of using a proxy server is that our IP address cannot be traced and the speed of 
 retrieving data increases as the data retrieved will be stored in a cache database. If a proxy server 
 is used by an organisation, then the organisation can also control the websites their employees 
 access through the provided server.
+
 By using the above concepts MultiThreading and Proxy-server, we made a secure 
 environment for the browsing experience of the client. In the project, the client can provide the 
 url once prompted by the terminal by using get function then the request is transported to proxy 
@@ -49,7 +52,10 @@ the listener socket.
 ![image](https://user-images.githubusercontent.com/65555866/142754088-0764fc82-c5a8-4a8b-a158-cbe8b7d63fd2.png)
 # Conclusion
 In this project we developed a multithreaded proxy server which will accept urls from the client and will fetch the output for the following input URL as provided by the client. During the development of the project we made certain assumptions which are as follows :
+
 ●	We configured the proxy server such that it can listen upto 5 requests at a time and keeps creating 5 threads for each of these client requests, if any more requests are given the server goes into sleep mode for a certain period and then resumes processing requests.
+
 ●	We also developed the proxy server according to prototype needs so it accepts url requests in certain formats only which were mentioned in the input and output observations.
+
 To achieve this proxy server and client we used python  programming language. While implementing this project we got familiarised with various libraries of python like sockets,os,sys,threading etc.. We got references from various websites for the practical implementation of this project. We also got familiarised with the socket programming concept.
 
