@@ -41,3 +41,15 @@ python language. Socket programming is a method of allowing two network nodes to
 with one another. One socket (node) listens on a specific port at an IP address, while the other 
 socket establishes a connection with it. While the client connects to the server, the server creates 
 the listener socket.
+
+# Flow Chart
+![image](https://user-images.githubusercontent.com/65555866/142754044-d3f0c536-2882-4f7c-8556-3018f661339d.png)
+# OUTPUT
+![image](https://user-images.githubusercontent.com/65555866/142754079-4bb3329e-8c7f-4c11-aa9b-bc8c33803c0e.png)
+![image](https://user-images.githubusercontent.com/65555866/142754088-0764fc82-c5a8-4a8b-a158-cbe8b7d63fd2.png)
+# Conclusion
+In this project we developed a multithreaded proxy server which will accept urls from the client and will fetch the output for the following input URL as provided by the client. During the development of the project we made certain assumptions which are as follows :
+●	We configured the proxy server such that it can listen upto 5 requests at a time and keeps creating 5 threads for each of these client requests, if any more requests are given the server goes into sleep mode for a certain period and then resumes processing requests.
+●	We also developed the proxy server according to prototype needs so it accepts url requests in certain formats only which were mentioned in the input and output observations.
+To achieve this proxy server and client we used python  programming language. While implementing this project we got familiarised with various libraries of python like sockets,os,sys,threading etc.. We got references from various websites for the practical implementation of this project. We also got familiarised with the socket programming concept.
+
